@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="mnups1luWPpEnk0s8Stv" name="Page-1">
+        <mxGraphModel dx="845" dy="1815" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-6" edge="1" parent="1" source="1XDXnfxA4CFLaW_NtbLP-1" style="edgeStyle=none;html=1;" target="1XDXnfxA4CFLaW_NtbLP-5" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-1" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="410" y="-741" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-4" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="410" y="-461" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-8" edge="1" parent="1" source="1XDXnfxA4CFLaW_NtbLP-5" style="edgeStyle=none;html=1;" target="1XDXnfxA4CFLaW_NtbLP-7" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-5" parent="1" style="whiteSpace=wrap;html=1;" value="Buka daftar peralatan" vertex="1">
+                    <mxGeometry height="60" width="120" x="365" y="-646" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-9" edge="1" parent="1" source="1XDXnfxA4CFLaW_NtbLP-7" style="edgeStyle=none;html=1;" target="1XDXnfxA4CFLaW_NtbLP-4" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1XDXnfxA4CFLaW_NtbLP-7" parent="1" style="whiteSpace=wrap;html=1;" value="Lihat informasi ketersediaan" vertex="1">
+                    <mxGeometry height="60" width="120" x="365" y="-561" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
