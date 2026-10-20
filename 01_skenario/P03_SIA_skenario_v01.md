@@ -41,5 +41,10 @@ Batas dan asumsi:
 | UC-SIA-06   | Proses Keputusan KRS      | Dosen Wali   | SIA-R06          | Menyetujui/menolak KRS yang berstatus menunggu + catatan   |
 
 <!-- relasi include -->
+UC-SIA-03 <<include>> UC-SIA-04
+Alasan: Validasi harus setelah pengajuan
 
 <!-- relasi extend -->
+UC-SIA-05 <<extend>> UC-SIA-03
+Alasan: Mahasiswa memilih unduh bukti
+Extention point: Bukti pengajuan tersedia
