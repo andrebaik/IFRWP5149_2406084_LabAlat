@@ -1,15 +1,20 @@
-| Elemen | Isi |
-|---|---|
-| ID dan nama | SIA-UC08 — Input Nilai Mata Kuliah |
-| Tujuan | Memungkinkan dosen pengampu memasukkan nilai mahasiswa untuk mata kuliah yang diampunya setelah masa perkuliahan berakhir. |
-| Aktor utama | Dosen |
-| Sumber kebutuhan | SIA-R08 |
-| Pemicu | Dosen memilih fungsi input nilai untuk mata kuliah yang diampunya. |
-| Prasyarat | Dosen terautentikasi, memiliki hak akses, merupakan dosen pengampu mata kuliah, dan masa perkuliahan telah berakhir. |
-| Alur utama | 1. Dosen membuka mata kuliah yang diampunya. 2. Sistem menampilkan daftar mahasiswa dan form nilai. 3. Dosen memasukkan nilai. 4. Sistem memeriksa kelengkapan dan rentang nilai sah. 5. Jika valid, sistem menyimpan nilai dalam keadaan belum dipublikasikan. 6. Sistem menampilkan konfirmasi. |
-| Alur alternatif | **A1 — Bukan dosen pengampu:** sistem menolak akses dan tidak menyimpan perubahan. **A2 — Nilai di luar rentang sah:** sistem menolak nilai, menampilkan kesalahan, dan meminta perbaikan; nilai tidak disimpan sampai valid. |
-| Pascakondisi berhasil | Nilai tersimpan untuk mata kuliah terkait dalam keadaan belum dipublikasikan. |
-| Pascakondisi gagal | Tidak ada perubahan nilai yang tersimpan; nilai sebelumnya tetap tidak berubah. |
-| Include / Extend | Tidak ditetapkan oleh jobsheet. |
-| Collaboration | SIA-CO01 — Input Nilai Mata Kuliah. |
-| Aturan bisnis | Hanya dosen pengampu boleh menginput nilai. KHS hanya menampilkan nilai yang sudah dipublikasikan secara resmi. Jobsheet tidak menentukan rentang angka nilai sah. |
+| Sumber | Hubungan | Tujuan |
+|---|---|---|
+| Civitas Akademika | Association | SIA-UC07 Lihat Kalender Akademik |
+| Mahasiswa | Association | SIA-UC01 Lihat Jadwal Kuliah |
+| Mahasiswa | Association | SIA-UC03 Ajukan KRS |
+| Mahasiswa | Association | SIA-UC05 Unduh Bukti Pengajuan KRS |
+| Mahasiswa | Association | SIA-UC09 Lihat KHS |
+| Mahasiswa | Generalization (segitiga kosong menunjuk aktor umum) | Civitas Akademika |
+| Dosen | Association | SIA-UC08 Input Nilai Mata Kuliah |
+| Dosen | Generalization (segitiga kosong menunjuk aktor umum) | Civitas Akademika |
+| Admin Akademik | Association | SIA-UC02 Kelola Jadwal Kuliah |
+| Admin Akademik | Association | SIA-UC10 Kelola Data Mahasiswa |
+| Dosen Wali | Association | SIA-UC06 Proses Keputusan KRS |
+| SIA-UC03 Ajukan KRS | «include» (tetap dari Pertemuan 3) | SIA-UC04 Validasi KRS |
+| SIA-UC05 Unduh Bukti Pengajuan KRS | «extend» [mahasiswa memilih unduh bukti], extension point *Bukti pengajuan tersedia* (tetap dari Pertemuan 3) | SIA-UC03 Ajukan KRS |
+| SIA-UC11 Tambah Data Mahasiswa | Generalization → | SIA-UC10 Kelola Data Mahasiswa |
+| SIA-UC12 Ubah Data Mahasiswa | Generalization → | SIA-UC10 Kelola Data Mahasiswa |
+| SIA-UC13 Hapus Data Mahasiswa | Generalization → | SIA-UC10 Kelola Data Mahasiswa |
+| SIA-CO01 (collaboration) | Realization → | SIA-UC08 Input Nilai Mata Kuliah |
+| SIA-CO02 (collaboration) | Realization → | SIA-UC09 Lihat KHS |

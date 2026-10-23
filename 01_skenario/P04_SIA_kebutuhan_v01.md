@@ -9,13 +9,13 @@
 | SIA-R12 | Model menunjukkan collaboration yang merealisasikan Input Nilai Mata Kuliah dan Lihat KHS. |
 
 ## Batas dan asumsi
+- Kode kebutuhan dimulai dari SIA-R07 agar SIA-R01 dan SIA-R02(Pertemuan 2) serta SIA-R03 sampai SIA-R06 (Pertemuan 3) tetapmempunyai identitas berbeda.
 - Pengguna telah terautentikasi dan memiliki hak akses sesuai peran.
-- Kalender akademik adalah agenda resmi institusi, seperti awal semester, batas KRS, dan masa ujian; bukan jadwal kuliah.
-- Nilai hanya dapat diinput dosen pengampu mata kuliah terkait.
-- Nilai yang diinput belum otomatis dipublikasikan. KHS hanya menampilkan nilai yang sudah dipublikasikan secara resmi.
-- Penghapusan data mahasiswa hanya diizinkan jika mahasiswa tidak mempunyai data akademik aktif. Ketentuan ini fiktif untuk latihan.
+- Kalender akademik pada tugas ini adalah agenda resmi institusi (awal semester, batas KRS, masa ujian, dan sejenisnya); jangan menyamakannya dengan jadwal kuliah pada Pertemuan 2.
+- Nilai hanya dapat diinput oleh dosen pengampu mata kuliah tersebut. Nilai yang diinput belum terpublikasi sebelum dinyatakan resmi oleh ketentuan tugas ini: KHS hanya menampilkan nilai yang sudah dipublikasikan.
+- Hapus Data Mahasiswa hanya untuk mahasiswa yang tidak memiliki data akademik aktif. Ketentuan ini fiktif untuk latihan.
+- Pengajuan KRS tetap digambar sebagai bagian diagram kumulatif dari Pertemuan 3. Pembayaran dan perancangan basis data berada di luar tugas ini.
 - Fungsi KRS dari Pertemuan 3 tetap ada pada diagram kumulatif.
-- Pembayaran dan perancangan basis data berada di luar ruang lingkup.
 
 ## Katalog use case kumulatif
 | ID | Nama | Aktor terkait | Kebutuhan | Status |

@@ -1,0 +1,11 @@
+## Situasi A — Mahasiswa melihat kalender akademik tanpa garis asosiasi langsung dari Mahasiswa
+- Hasil yang harus terjadi menurut diagram: situasi ini sah dan benar. Mahasiswa menjalankan SIA-UC07 meskipun tidak ada garis langsung Mahasiswa–SIA-UC07.
+- Dasar pada model: Mahasiswa terhubung ke Civitas Akademika melalui generalization aktor (segitiga kosong menunjuk Civitas Akademika), dan asosiasi ke SIA-UC07 digambar satu kali dari Civitas Akademika. Menurut OMG UML 2.5.1, aktor khusus dapat digunakan di setiap tempat aktor umum dapat digunakan, sehingga Mahasiswa mewarisi seluruh kemampuan interaksi Civitas Akademika. Fungsi mahasiswa tidak hilang; justru aturan pemodelannya mewajibkan asosiasi warisan tidak digambar ulang dari Mahasiswa maupun Dosen.
+
+## Situasi B — Dosen yang bukan pengampu mencoba menginput nilai
+- Hasil yang harus terjadi menurut deskripsi SIA-UC08: sistem menolak. Pada langkah 2 alur utama, sistem memeriksa bahwa dosen adalah pengampu mata kuliah terpilih; pemeriksaan gagal, sehingga alur alternatif A1 berjalan: sistem menampilkan pesan bahwa hanya dosen pengampu yang dapat menginput nilai, lembar input tidak dibuka, dan tidak ada nilai yang tersimpan (pascakondisi gagal).
+- Dasar pada model: prasyarat SIA-UC08 ("dosen adalah pengampu mata kuliah terpilih"), kebutuhan SIA-R08 ("nilai mata kuliah yang diampunya"), dan aturan batas pada berkas kebutuhan. Asosiasi Dosen→SIA-UC08 menyatakan dosen dapat menjalankan fungsi input nilai, tetapi untuk mata kuliah mana nilai boleh masuk diatur oleh alur dalam deskripsi use case, bukan oleh diagram.
+
+## Situasi C — Admin Akademik menghapus data mahasiswa yang masih memiliki data akademik aktif
+- Hasil yang harus terjadi menurut aturan tugas: sistem menolak penghapusan. Alur alternatif SIA-UC13 berjalan: sistem menampilkan alasan penolakan (mahasiswa masih memiliki data akademik aktif) dan data mahasiswa tetap utuh (pascakondisi gagal).
+- Dasar pada model: perilaku pembeda SIA-UC13 ("hanya untuk mahasiswa yang tidak memiliki data akademik aktif") dan aturan batas pada berkas kebutuhan. Admin Akademik tetap sah menjalankan SIA-UC13 melalui asosiasi ke use case umum SIA-UC10; yang ditolak adalah eksekusinya untuk kondisi data tersebut, bukan hak aksesnya.
