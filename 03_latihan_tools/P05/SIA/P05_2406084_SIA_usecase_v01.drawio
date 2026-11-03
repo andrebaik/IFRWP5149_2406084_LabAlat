@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="ZqrfU9paNhzZJMk8PfCz" name="Page-1">
-        <mxGraphModel dx="1756" dy="975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+        <mxGraphModel dx="1059" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -139,6 +139,14 @@
                 <mxCell id="Mmg8GcM2UXTs8PbaG2XD-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Dosen Wali" vertex="1">
                     <mxGeometry height="60" width="30" x="910" y="406" as="geometry"/>
                 </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="w8nXysWbznzaF8F-jXn2" name="Page-2">
+        <mxGraphModel dx="752" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="x-G38qh1zHhMidAvjDed-0"/>
+                <mxCell id="x-G38qh1zHhMidAvjDed-1" parent="x-G38qh1zHhMidAvjDed-0"/>
             </root>
         </mxGraphModel>
     </diagram>
