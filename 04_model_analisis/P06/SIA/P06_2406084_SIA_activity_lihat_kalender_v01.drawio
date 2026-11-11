@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="SIA-UC07 Lihat Kalender Akademik" name="SIA-UC07 Lihat Kalender Akademik">
+        <mxGraphModel dx="3074" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="600" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="L1" parent="1" style="swimlane;startSize=30;" value="Civitas Akademika" vertex="1">
+                    <mxGeometry height="520" width="240" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="L2" parent="1" style="swimlane;startSize=30;" value="Sistem" vertex="1">
+                    <mxGeometry height="520" width="440" x="280" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="st" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="145" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Membuka fungsi Lihat Kalender Akademik" vertex="1">
+                    <mxGeometry height="50" width="160" x="80" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" value="Data kalender akademik tersedia?" vertex="1">
+                    <mxGeometry height="70" width="170" x="315" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menampilkan agenda kalender akademik beserta tanggal pelaksanaannya, yaitu awal semester, batas KRS, dan masa ujian" vertex="1">
+                    <mxGeometry height="80" width="190" x="305" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan data kalender akademik belum tersedia" vertex="1">
+                    <mxGeometry height="60" width="160" x="540" y="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="385" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="605" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="a1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dec" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s1" value="[tersedia]">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="r1" value="[belum tersedia]">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,143 @@
+<mxfile host="65bd71144e">
+    <diagram id="SIA-UC02-act" name="SIA-UC02 Kelola Jadwal Kuliah">
+        <mxGraphModel dx="5929" dy="1079" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="L1" parent="1" style="swimlane;startSize=30;" value="Admin Akademik" vertex="1">
+                    <mxGeometry height="1020" width="240" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="L2" parent="1" style="swimlane;startSize=30;" value="Sistem" vertex="1">
+                    <mxGeometry height="1020" width="420" x="280" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="st" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="135" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Membuka fungsi Kelola Jadwal Kuliah" vertex="1">
+                    <mxGeometry height="50" width="170" x="75" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menampilkan daftar jadwal kuliah" vertex="1">
+                    <mxGeometry height="50" width="170" x="405" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Memilih bentuk pengelolaan: tambah, ubah, atau hapus" vertex="1">
+                    <mxGeometry height="50" width="170" x="75" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menampilkan formulir sesuai bentuk pengelolaan" vertex="1">
+                    <mxGeometry height="50" width="170" x="405" y="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Mengisi atau mengonfirmasi data jadwal" vertex="1">
+                    <mxGeometry height="50" width="170" x="75" y="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Memeriksa kelengkapan dan keabsahan data" vertex="1">
+                    <mxGeometry height="50" width="170" x="405" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;" value="Data valid?" vertex="1">
+                    <mxGeometry height="70" width="120" x="430" y="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menyimpan perubahan" vertex="1">
+                    <mxGeometry height="50" width="170" x="75" y="710" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menyimpan perubahan dan menampilkan konfirmasi" vertex="1">
+                    <mxGeometry height="50" width="170" x="405" y="790" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penyimpanan dan menampilkan pesan kesalahan" vertex="1">
+                    <mxGeometry height="60" width="170" x="590" y="710" as="geometry"/>
+                </mxCell>
+                <mxCell id="mg" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="145" y="890" as="geometry"/>
+                </mxCell>
+                <mxCell id="en" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="145" y="950" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="a1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="s1" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="145"/>
+                            <mxPoint x="260" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="a2" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="265"/>
+                            <mxPoint x="160" y="265"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="s2" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="305"/>
+                            <mxPoint x="260" y="385"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="a3" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="425"/>
+                            <mxPoint x="160" y="425"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="s3" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="465"/>
+                            <mxPoint x="260" y="545"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="dec" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="a4" value="[ya]">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="690"/>
+                            <mxPoint x="160" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="s5" value="[tidak]">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="675" y="645"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="s4" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="735"/>
+                            <mxPoint x="260" y="815"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="mg" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="860"/>
+                            <mxPoint x="160" y="860"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e12" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="mg" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="675" y="875"/>
+                            <mxPoint x="160" y="875"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e13" edge="1" parent="1" source="mg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;" target="en" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

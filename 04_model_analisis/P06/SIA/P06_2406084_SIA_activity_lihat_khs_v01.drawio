@@ -1,0 +1,73 @@
+<mxfile host="65bd71144e">
+    <diagram id="SIA-UC09 Lihat KHS" name="SIA-UC09 Lihat KHS">
+        <mxGraphModel dx="3952" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="800" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="L1" parent="1" style="swimlane;startSize=30;" value="Mahasiswa" vertex="1">
+                    <mxGeometry height="700" width="240" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="L2" parent="1" style="swimlane;startSize=30;" value="Sistem" vertex="1">
+                    <mxGeometry height="700" width="440" x="280" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" value="Tidak menampilkan nilai tersebut pada KHS dan menampilkan pesan nilai belum dipublikasikan" vertex="1">
+                    <mxGeometry height="80" width="170" x="255" y="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" parent="L2" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="325" y="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="L2" source="r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="st" parent="1" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="145" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Memilih menu KHS" vertex="1">
+                    <mxGeometry height="50" width="160" x="80" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Menampilkan pilihan semester" vertex="1">
+                    <mxGeometry height="50" width="160" x="320" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Memilih semester" vertex="1">
+                    <mxGeometry height="50" width="160" x="80" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="Zc4AYdXA9wNJ7F05z6qK-1" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=blockThin;endFill=1;rounded=0;curved=0;" target="r1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" value="Nilai pada semester terpilih sudah dipublikasikan?" vertex="1">
+                    <mxGeometry height="80" width="190" x="305" y="375" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menampilkan KHS semester terpilih yang hanya memuat nilai yang sudah dipublikasikan" vertex="1">
+                    <mxGeometry height="70" width="190" x="305" y="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" parent="1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="385" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="m1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="m2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dec" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s2" value="[sudah dipublikasikan]">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="[belum dipublikasikan]">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="394" as="sourcePoint"/>
+                        <mxPoint x="530" y="399" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=blockThin;endFill=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
